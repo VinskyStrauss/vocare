@@ -23,15 +23,6 @@ const NavBar: React.FC<NavBarProps> = ({
   const [showFilter, setShowFilter] = useState(false);
   const filterRef = useRef<HTMLDivElement>(null);
 
-  // Helper function to get today's date in YYYY-MM-DD format
-  function getCurrentDate() {
-    const today = new Date();
-    const year = today.getFullYear();
-    const month = (today.getMonth() + 1).toString().padStart(2, "0");
-    const day = today.getDate().toString().padStart(2, "0");
-    return `${year}-${month}-${day}`;
-  }
-
   // Handle date change
   const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     onDateChange(event.target.value); // Directly call onDateChange to update the parent component
