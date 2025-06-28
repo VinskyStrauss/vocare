@@ -15,22 +15,30 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+oder in vercel Link
+Open [https://vocare-ten.vercel.app/](https://vocare-ten.vercel.app/) with the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Termin-Erstellung und -Bearbeitung
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Diese Funktion ist noch nicht implementiert und stellt lediglich eine Idee dar.**
 
-## Learn More
+Die Erstellung und Bearbeitung von Terminen könnte über ein Dialog erfolgen, das folgende Funktionen bietet:
 
-To learn more about Next.js, take a look at the following resources:
+- **Felder**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - Titel des Termins
+  - Datum und Uhrzeit
+  - Kategorie (z. B. Arzt, Meeting)
+  - Beschreibung (optional)
+  - Benachrichtigungen
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Benutzerfreundlichkeit**:
 
-## Deploy on Vercel
+  - Einfache Eingabe mit klaren Feldern und Dropdowns
+  - Fehlervalidierung (z. B. doppelte Termine verhindern)
+  - Erfolgsmeldung nach Speicherung
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Kalenderansicht**:
+  - Termine können direkt bearbeitet oder gelöscht werden.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Diese Funktionalität bietet einen schnellen Einstieg und lässt sich später erweitern.
