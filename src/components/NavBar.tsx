@@ -21,7 +21,6 @@ const NavBar: React.FC<NavBarProps> = ({
   onDateChange,
 }) => {
   const [showFilter, setShowFilter] = useState(false);
-  const [currentDate, setCurrentDate] = useState<string>(getCurrentDate()); // Renamed from selectedDate to currentDate
   const filterRef = useRef<HTMLDivElement>(null);
 
   // Helper function to get today's date in YYYY-MM-DD format
@@ -35,9 +34,7 @@ const NavBar: React.FC<NavBarProps> = ({
 
   // Handle date change
   const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setCurrentDate(event.target.value);
-    // You can pass the new date back to a parent if needed, e.g., onDateChange(currentDate)
-    onDateChange(event.target.value); // Call the onDateChange from props
+    onDateChange(event.target.value); // Directly call onDateChange to update the parent component
   };
 
   // Close dropdown when clicking outside
@@ -68,8 +65,8 @@ const NavBar: React.FC<NavBarProps> = ({
           name="datePicker"
           type="date"
           className="border rounded px-3 py-1 text-sm"
-          value={selectedDate} // Keep using selectedDate passed from props for display
-          onChange={handleDateChange} // Use handleDateChange to update local state and call onDateChange
+          value={selectedDate} // Use the selectedDate passed from props for display
+          onChange={handleDateChange} // Call handleDateChange to update selectedDate
         />
 
         {/* View Switch Buttons */}
