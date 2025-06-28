@@ -1,10 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
 import ListCard from "./ListCard";
-import AppointmentService, {
-  Appointment,
-  Category,
-} from "../services/AppointmentService";
+import { Appointment, Category } from "../services/AppointmentService";
 
 type ListComponentProps = {
   appointments: Appointment[];

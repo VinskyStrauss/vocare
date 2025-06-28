@@ -1,8 +1,6 @@
 "use client";
-
 import React, { useState } from "react";
 import { Appointment, Category } from "../services/AppointmentService";
-import { CiClock2 } from "react-icons/ci";
 import ListCard from "../components/ListCard"; // Update path as needed
 
 type WeeklyCalendarProps = {
